@@ -348,8 +348,7 @@ export default function Index() {
               animationDelay: "0.05s",
             }}
           >
-            Живая<br />
-            <em style={{ color: "hsl(var(--terracotta))", fontStyle: "italic" }}>кухня</em>
+            Mikee
           </h1>
 
           <p
@@ -364,6 +363,19 @@ export default function Index() {
             }}
           >
             Авторская кухня · Живая атмосфера · Настоящий вкус
+          </p>
+
+          <p
+            className="font-cormorant animate-fade-up"
+            style={{
+              color: "rgba(240,228,210,0.38)",
+              fontSize: "0.95rem",
+              letterSpacing: "0.08em",
+              fontStyle: "italic",
+              animationDelay: "0.8s",
+            }}
+          >
+            Планета Земля
           </p>
 
           <div
@@ -462,11 +474,17 @@ export default function Index() {
         }}
       >
         <p className="font-cormorant text-3xl font-light" style={{ color: "hsl(40,38%,88%)" }}>
-          Живая кухня
+          Mikee
         </p>
         <p
-          className="font-golos text-xs mt-3 uppercase tracking-widest"
-          style={{ color: "rgba(240,228,210,0.3)", letterSpacing: "0.2em" }}
+          className="font-cormorant italic mt-1"
+          style={{ color: "rgba(240,228,210,0.4)", fontSize: "1rem" }}
+        >
+          Планета Земля
+        </p>
+        <p
+          className="font-golos text-xs mt-4 uppercase tracking-widest"
+          style={{ color: "rgba(240,228,210,0.25)", letterSpacing: "0.2em" }}
         >
           © 2026 · с любовью к каждому гостю
         </p>
