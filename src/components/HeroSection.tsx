@@ -19,17 +19,6 @@ export default function HeroSection() {
         />
 
         <div className="relative z-10 flex flex-col items-center gap-5 sm:gap-7 max-w-xl mx-auto">
-          <div className="flex items-center gap-4">
-            <div style={{ width: "50px", height: "1px", background: "hsl(40,65%,55%)", opacity: 0.7 }} />
-            <span
-              className="font-cormorant-sc text-xs tracking-widest animate-fade-up"
-              style={{ color: "hsl(40,65%,60%)", letterSpacing: "0.32em", animationDelay: "0.3s" }}
-            >
-              с 2019 года
-            </span>
-            <div style={{ width: "50px", height: "1px", background: "hsl(40,65%,55%)", opacity: 0.7 }} />
-          </div>
-
           <h1
             className="font-cormorant animate-hero-reveal"
             style={{
