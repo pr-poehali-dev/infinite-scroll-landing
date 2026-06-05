@@ -349,6 +349,32 @@
   }
 }
 
+/* Monument Service — timeline responsive */
+@media (max-width: 768px) {
+  .timeline-step {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .timeline-left,
+  .timeline-right {
+    width: 100% !important;
+    padding: 24px 0 !important;
+    text-align: left !important;
+  }
+}
+
+/* Monument Service — gallery responsive */
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 560px) {
+  .gallery-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* Monument Service — feature card hover */
 .ms-card {
   transition:

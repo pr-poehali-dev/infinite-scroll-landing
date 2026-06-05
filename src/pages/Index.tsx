@@ -3,6 +3,8 @@ import HeroSection from "@/components/monument/HeroSection";
 import WhyUs from "@/components/monument/WhyUs";
 import Catalog from "@/components/monument/Catalog";
 import CatalogCTA from "@/components/monument/CatalogCTA";
+import Technology from "@/components/monument/Technology";
+import Gallery from "@/components/monument/Gallery";
 
 export default function Index() {
   return (
@@ -12,6 +14,8 @@ export default function Index() {
       <WhyUs />
       <Catalog />
       <CatalogCTA />
+      <Technology />
+      <Gallery />
     </div>
   );
 }
