@@ -34,13 +34,18 @@
 
     --radius: 0.25rem;
 
-    /* Custom restaurant palette */
+    /* Monument Service palette */
+    --graphite: 0 0% 17%;
+    --gold: 38 50% 60%;
+    --gold-dark: 38 50% 48%;
+    --light-gray: 60 14% 96%;
+    --dark-text: 0 0% 10%;
+    --white: 0 0% 100%;
+
+    /* Keep legacy vars */
     --terracotta: 16 68% 48%;
     --cream: 40 38% 92%;
-    --gold: 40 70% 55%;
     --espresso: 24 40% 16%;
-    --olive: 72 22% 38%;
-    --blush: 10 30% 85%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -274,4 +279,67 @@
 }
 .animate-spin-slow {
   animation: spin-slow 2s linear infinite;
+}
+
+/* Monument Service — scroll reveal */
+@keyframes ms-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ms-reveal {
+  animation: ms-reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Monument Service — parallax hero */
+.ms-hero-bg {
+  will-change: transform;
+  transform-origin: center center;
+}
+
+/* Monument Service — gold button */
+.ms-btn-gold {
+  background-color: #c9a96e;
+  color: #ffffff;
+  transition:
+    background-color 0.25s ease,
+    transform 0.2s ease;
+}
+.ms-btn-gold:hover {
+  background-color: #b8934d;
+  transform: translateY(-1px);
+}
+
+/* Monument Service — nav dropdown */
+.ms-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #ffffff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border-top: 2px solid #c9a96e;
+  z-index: 100;
+}
+.ms-dropdown-trigger:hover .ms-dropdown,
+.ms-dropdown-trigger:focus-within .ms-dropdown {
+  display: block;
+}
+
+/* Monument Service — feature card hover */
+.ms-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.ms-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
 }

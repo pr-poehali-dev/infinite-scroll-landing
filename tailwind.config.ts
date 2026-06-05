@@ -20,8 +20,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
+				'playfair': ['"Playfair Display"', 'Georgia', 'serif'],
+				'montserrat': ['Montserrat', 'sans-serif'],
 				'cormorant': ['"Cormorant Garamond"', 'Georgia', 'serif'],
-				'cormorant-sc': ['"Cormorant SC"', 'Georgia', 'serif'],
 				'golos': ['"Golos Text"', 'sans-serif'],
 			},
 			colors: {
