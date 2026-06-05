@@ -382,6 +382,18 @@
   }
 }
 
+/* Monument Service — whyus cards responsive */
+@media (max-width: 1024px) {
+  .whyus-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 560px) {
+  .whyus-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* Monument Service — contacts responsive */
 @media (max-width: 768px) {
   .contacts-grid {
