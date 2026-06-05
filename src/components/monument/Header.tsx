@@ -95,31 +95,15 @@ export default function Header() {
       >
         {/* Logo */}
         <a href="#top" style={{ textDecoration: "none", flexShrink: 0 }}>
-          <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.1 }}>
-            <span
-              style={{
-                fontFamily: '"Playfair Display", Georgia, serif',
-                fontWeight: 700,
-                fontSize: "1.2rem",
-                color: "#2C2C2C",
-                letterSpacing: "0.02em",
-              }}
-            >
-              Монумент Сервис
-            </span>
-            <span
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "0.6rem",
-                color: "#C9A96E",
-                letterSpacing: "0.18em",
-                textTransform: "uppercase",
-                fontWeight: 500,
-              }}
-            >
-              Памятники на заказ и оптом
-            </span>
-          </div>
+          <img
+            src="https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/bucket/c254357b-01dd-4886-9edb-32baa18603a0.png"
+            alt="Монумент Сервис"
+            style={{
+              height: "48px",
+              width: "auto",
+              display: "block",
+            }}
+          />
         </a>
 
         {/* Desktop Nav */}

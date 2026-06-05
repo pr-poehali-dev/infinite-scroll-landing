@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 
 const HERO_IMAGE = "https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/files/5203f84a-a1a4-4aa2-be58-0ab40714e6df.jpg";
-const LOGO_URL = "https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/bucket/c254357b-01dd-4886-9edb-32baa18603a0.png";
 
 export default function HeroSection() {
   const bgRef = useRef<HTMLDivElement>(null);
@@ -61,24 +60,6 @@ export default function HeroSection() {
           margin: "0 auto",
         }}
       >
-        {/* Logo */}
-        <div
-          className="animate-fade-up"
-          style={{ marginBottom: "32px", animationDelay: "0.1s" }}
-        >
-          <img
-            src={LOGO_URL}
-            alt="Монумент Сервис"
-            style={{
-              height: "80px",
-              width: "auto",
-              margin: "0 auto",
-              display: "block",
-              filter: "brightness(0) invert(1)",
-            }}
-          />
-        </div>
-
         {/* Eyebrow */}
         <div
           className="animate-fade-up"
