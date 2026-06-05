@@ -5,6 +5,9 @@ import Catalog from "@/components/monument/Catalog";
 import CatalogCTA from "@/components/monument/CatalogCTA";
 import Technology from "@/components/monument/Technology";
 import Gallery from "@/components/monument/Gallery";
+import Extras from "@/components/monument/Extras";
+import Contacts from "@/components/monument/Contacts";
+import Footer from "@/components/monument/Footer";
 
 export default function Index() {
   return (
@@ -16,6 +19,9 @@ export default function Index() {
       <CatalogCTA />
       <Technology />
       <Gallery />
+      <Extras />
+      <Contacts />
+      <Footer />
     </div>
   );
 }
