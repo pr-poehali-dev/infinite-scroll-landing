@@ -55,7 +55,7 @@ export default function HeroSection() {
           position: "relative",
           zIndex: 10,
           textAlign: "center",
-          padding: "136px 24px 80px",
+          padding: "152px 24px 80px",
           maxWidth: "820px",
           margin: "0 auto",
         }}
@@ -91,19 +91,20 @@ export default function HeroSection() {
         <h1
           className="animate-hero-reveal"
           style={{
-            fontFamily: '"Playfair Display", Georgia, serif',
+            fontFamily: "Montserrat, sans-serif",
             fontWeight: 700,
-            fontSize: "clamp(2.2rem, 6vw, 4.2rem)",
+            fontSize: "clamp(2rem, 5.5vw, 3.8rem)",
             color: "#ffffff",
-            lineHeight: 1.15,
-            letterSpacing: "-0.01em",
+            lineHeight: 1.12,
+            letterSpacing: "-0.02em",
+            textTransform: "uppercase",
             marginBottom: "24px",
             animationDelay: "0.05s",
           }}
         >
-          Памятники, которые&nbsp;хранят
+          Памятники, которые хранят
           <br />
-          <span style={{ color: "#C9A96E", fontStyle: "italic" }}>память на века</span>
+          <span style={{ color: "#C9A96E" }}>память на века</span>
         </h1>
 
         {/* Subtitle */}

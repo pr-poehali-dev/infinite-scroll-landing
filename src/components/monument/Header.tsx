@@ -86,7 +86,7 @@ export default function Header() {
           maxWidth: "1280px",
           margin: "0 auto",
           padding: "0 24px",
-          height: "84px",
+          height: "100px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -99,10 +99,10 @@ export default function Header() {
             src="https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/bucket/0243199c-d156-4157-b0e4-24aaf81aac9d.png"
             alt="Монумент Сервис"
             style={{
-              height: "64px",
+              height: "88px",
               width: "auto",
               display: "block",
-              maxWidth: "320px",
+              maxWidth: "420px",
             }}
           />
         </a>
