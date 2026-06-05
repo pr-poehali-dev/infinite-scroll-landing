@@ -55,7 +55,7 @@ export default function HeroSection() {
           position: "relative",
           zIndex: 10,
           textAlign: "center",
-          padding: "120px 24px 80px",
+          padding: "136px 24px 80px",
           maxWidth: "820px",
           margin: "0 auto",
         }}
