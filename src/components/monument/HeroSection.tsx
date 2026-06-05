@@ -121,9 +121,9 @@ export default function HeroSection() {
             animationDelay: "0.55s",
           }}
         >
-          Изготовление гранитных и мраморных памятников «под ключ»
-          в&nbsp;Москве и области. Индивидуальные проекты, работа с камнем
-          любых пород, полный цикл производства.
+          Изготовление гранитных и мраморных памятников «под ключ».
+          Индивидуальные проекты, работа с камнем любых пород,
+          полный цикл производства.
         </p>
 
         {/* CTA buttons */}
@@ -181,54 +181,6 @@ export default function HeroSection() {
           >
             Смотреть каталог
           </a>
-        </div>
-
-        {/* Stats */}
-        <div
-          className="animate-fade-up"
-          style={{
-            display: "flex",
-            gap: "40px",
-            justifyContent: "center",
-            flexWrap: "wrap",
-            marginTop: "60px",
-            paddingTop: "40px",
-            borderTop: "1px solid rgba(255,255,255,0.12)",
-            animationDelay: "0.95s",
-          }}
-        >
-          {[
-            { value: "12+", label: "лет на рынке" },
-            { value: "5 000+", label: "выполненных заказов" },
-            { value: "5 лет", label: "гарантия" },
-            { value: "3 дня", label: "срочное изготовление" },
-          ].map((stat) => (
-            <div key={stat.label} style={{ textAlign: "center" }}>
-              <div
-                style={{
-                  fontFamily: '"Playfair Display", Georgia, serif',
-                  fontSize: "clamp(1.6rem, 3vw, 2.2rem)",
-                  fontWeight: 700,
-                  color: "#C9A96E",
-                  lineHeight: 1,
-                  marginBottom: "6px",
-                }}
-              >
-                {stat.value}
-              </div>
-              <div
-                style={{
-                  fontFamily: "Montserrat, sans-serif",
-                  fontSize: "0.72rem",
-                  color: "rgba(255,255,255,0.5)",
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                }}
-              >
-                {stat.label}
-              </div>
-            </div>
-          ))}
         </div>
 
         {/* Scroll hint */}

@@ -8,10 +8,12 @@ import Gallery from "@/components/monument/Gallery";
 import Extras from "@/components/monument/Extras";
 import Contacts from "@/components/monument/Contacts";
 import Footer from "@/components/monument/Footer";
+import ScrollToTop from "@/components/monument/ScrollToTop";
 
 export default function Index() {
   return (
     <div style={{ background: "#ffffff" }}>
+      <ScrollToTop />
       <Header />
       <HeroSection />
       <WhyUs />

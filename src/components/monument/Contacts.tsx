@@ -35,8 +35,8 @@ const CONTACT_ITEMS = [
       </svg>
     ),
     label: "Email",
-    value: "info@monument-service.ru",
-    href: "mailto:info@monument-service.ru",
+    value: "info@monumentservice.ru",
+    href: "mailto:info@monumentservice.ru",
     accent: false,
   },
   {

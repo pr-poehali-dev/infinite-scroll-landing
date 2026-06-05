@@ -9,23 +9,17 @@ export default function Footer() {
       overflow: "hidden",
     }}>
 
-      {/* Monogram MS — ghosted background left */}
+      {/* Thematic background image — ghosted */}
       <div style={{
         position: "absolute",
-        left: "-40px",
-        bottom: "-20px",
-        fontFamily: '"Playfair Display", Georgia, serif',
-        fontSize: "280px",
-        fontWeight: 700,
-        color: "rgba(201,169,110,0.04)",
-        lineHeight: 1,
-        letterSpacing: "-0.04em",
+        inset: 0,
+        backgroundImage: "url('https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/files/b6657243-e79e-419a-8f32-54306c738352.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        opacity: 0.06,
         pointerEvents: "none",
-        userSelect: "none",
         zIndex: 0,
-      }}>
-        MS
-      </div>
+      }} />
 
       <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
 
