@@ -181,12 +181,64 @@ export default function HeroSection() {
         {/* Scroll hint */}
         <div
           className="animate-fade-up animate-float-slow"
-          style={{ marginTop: "40px", animationDelay: "1.1s" }}
+          style={{ marginTop: "32px", animationDelay: "1.1s" }}
         >
           <svg width="22" height="32" viewBox="0 0 24 36" fill="none" style={{ margin: "0 auto", display: "block" }}>
             <rect x="1" y="1" width="22" height="34" rx="11" stroke="rgba(255,255,255,0.2)" strokeWidth="1.5" />
             <circle cx="12" cy="10" r="3" fill="rgba(255,255,255,0.35)" />
           </svg>
+        </div>
+      </div>
+
+      {/* Stats strip — pinned to bottom of hero */}
+      <div style={{
+        position: "absolute",
+        bottom: 0,
+        left: 0,
+        right: 0,
+        zIndex: 20,
+        background: "rgba(20,20,20,0.72)",
+        backdropFilter: "blur(12px)",
+        borderTop: "1px solid rgba(201,169,110,0.12)",
+        padding: "20px 24px",
+      }}>
+        <div style={{
+          maxWidth: "900px",
+          margin: "0 auto",
+          display: "grid",
+          gridTemplateColumns: "repeat(4, 1fr)",
+          gap: "16px",
+        }}
+          className="stats-grid"
+        >
+          {[
+            { value: "12+", label: "лет на рынке" },
+            { value: "5 000+", label: "выполненных заказов" },
+            { value: "5 лет", label: "гарантия на изделия" },
+            { value: "3 дня", label: "срок изготовления" },
+          ].map((s) => (
+            <div key={s.label} style={{ textAlign: "center" }}>
+              <div style={{
+                fontFamily: '"Playfair Display", Georgia, serif',
+                fontSize: "clamp(1.4rem, 2.5vw, 2rem)",
+                fontWeight: 700,
+                color: "#C9A96E",
+                lineHeight: 1,
+                marginBottom: "4px",
+              }}>
+                {s.value}
+              </div>
+              <div style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "0.62rem",
+                color: "rgba(255,255,255,0.4)",
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+              }}>
+                {s.label}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

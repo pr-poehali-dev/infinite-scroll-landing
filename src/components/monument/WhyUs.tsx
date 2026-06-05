@@ -16,13 +16,6 @@ function useReveal(threshold = 0.1) {
   return { ref, visible };
 }
 
-const STATS = [
-  { value: "12+", label: "лет на рынке" },
-  { value: "5 000+", label: "выполненных заказов" },
-  { value: "5 лет", label: "гарантия на изделия" },
-  { value: "3 дня", label: "срок изготовления" },
-];
-
 const CARDS = [
   {
     image: "https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/files/dc3eabeb-2012-4a65-97ad-3535ee53eb54.jpg",
@@ -196,59 +189,10 @@ function FeatureCard({ image, number, title, desc, highlight, index }: {
 
 export default function WhyUs() {
   const { ref: headRef, visible: headVisible } = useReveal(0.1);
-  const { ref: statsRef, visible: statsVisible } = useReveal(0.1);
   const { ref: ctaRef, visible: ctaVisible } = useReveal(0.1);
 
   return (
     <section id="about" style={{ background: "#F5F5F0" }}>
-
-      {/* Stats strip */}
-      <div
-        ref={statsRef}
-        style={{ background: "#2C2C2C", padding: "36px 24px" }}
-      >
-        <div style={{
-          maxWidth: "900px",
-          margin: "0 auto",
-          display: "grid",
-          gridTemplateColumns: "repeat(4, 1fr)",
-          gap: "16px",
-        }}
-          className="stats-grid"
-        >
-          {STATS.map((s, i) => (
-            <div
-              key={s.label}
-              style={{
-                textAlign: "center",
-                opacity: statsVisible ? 1 : 0,
-                transform: statsVisible ? "none" : "translateY(16px)",
-                transition: `opacity 0.55s ease ${i * 0.1}s, transform 0.55s ease ${i * 0.1}s`,
-              }}
-            >
-              <div style={{
-                fontFamily: '"Playfair Display", Georgia, serif',
-                fontSize: "clamp(1.6rem, 3vw, 2.2rem)",
-                fontWeight: 700,
-                color: "#C9A96E",
-                lineHeight: 1,
-                marginBottom: "5px",
-              }}>
-                {s.value}
-              </div>
-              <div style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "0.68rem",
-                color: "rgba(255,255,255,0.4)",
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-              }}>
-                {s.label}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* Main content */}
       <div style={{ padding: "80px 24px 72px" }}>
