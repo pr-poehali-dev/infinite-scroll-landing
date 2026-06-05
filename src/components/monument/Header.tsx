@@ -96,7 +96,7 @@ export default function Header() {
         {/* Logo */}
         <a href="#top" style={{ textDecoration: "none", flexShrink: 0 }}>
           <img
-            src="https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/bucket/c254357b-01dd-4886-9edb-32baa18603a0.png"
+            src="https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/bucket/0243199c-d156-4157-b0e4-24aaf81aac9d.png"
             alt="Монумент Сервис"
             style={{
               height: "48px",

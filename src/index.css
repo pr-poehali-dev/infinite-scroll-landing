@@ -333,6 +333,22 @@
   display: block;
 }
 
+/* Monument Service — catalog responsive */
+@media (max-width: 768px) {
+  .catalog-row {
+    flex-direction: column !important;
+  }
+  .catalog-img-col {
+    width: 100% !important;
+    order: 0 !important;
+    height: 260px;
+  }
+  .catalog-text-col {
+    order: 1 !important;
+    padding: 36px 24px !important;
+  }
+}
+
 /* Monument Service — feature card hover */
 .ms-card {
   transition:
