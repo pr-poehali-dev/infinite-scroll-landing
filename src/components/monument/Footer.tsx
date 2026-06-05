@@ -1,32 +1,50 @@
 export default function Footer() {
   return (
     <footer style={{
-      background: "#2C2C2C",
-      borderTop: "1px solid rgba(201,169,110,0.15)",
-      padding: "48px 24px 36px",
+      background: "#1a1a1a",
+      borderTop: "1px solid rgba(201,169,110,0.1)",
+      padding: "52px 24px 36px",
       textAlign: "center",
+      position: "relative",
+      overflow: "hidden",
     }}>
-      <div style={{ maxWidth: "900px", margin: "0 auto" }}>
 
-        {/* Logo */}
+      {/* Monogram MS — ghosted background left */}
+      <div style={{
+        position: "absolute",
+        left: "-40px",
+        bottom: "-20px",
+        fontFamily: '"Playfair Display", Georgia, serif',
+        fontSize: "280px",
+        fontWeight: 700,
+        color: "rgba(201,169,110,0.04)",
+        lineHeight: 1,
+        letterSpacing: "-0.04em",
+        pointerEvents: "none",
+        userSelect: "none",
+        zIndex: 0,
+      }}>
+        MS
+      </div>
+
+      <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+
         <img
           src="https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/bucket/b43853ec-1979-4ba6-976f-5ea9bd550f70.png"
           alt="Монумент Сервис"
           style={{
-            height: "52px",
+            height: "48px",
             width: "auto",
             display: "block",
-            margin: "0 auto 24px",
+            margin: "0 auto 20px",
             filter: "brightness(0) invert(1)",
-            opacity: 0.85,
+            opacity: 0.75,
           }}
         />
 
-        {/* Divider */}
-        <div style={{ width: "48px", height: "1px", background: "#C9A96E", margin: "0 auto 24px", opacity: 0.6 }} />
+        <div style={{ width: "40px", height: "1px", background: "#C9A96E", margin: "0 auto 20px", opacity: 0.5 }} />
 
-        {/* Links */}
-        <div style={{ display: "flex", gap: "8px 24px", justifyContent: "center", flexWrap: "wrap", marginBottom: "28px" }}>
+        <div style={{ display: "flex", gap: "6px 20px", justifyContent: "center", flexWrap: "wrap", marginBottom: "24px" }}>
           {[
             { label: "О нас", href: "#about" },
             { label: "Каталог", href: "#catalog" },
@@ -39,48 +57,44 @@ export default function Footer() {
               href={l.href}
               style={{
                 fontFamily: "Montserrat, sans-serif",
-                fontSize: "0.78rem",
-                color: "rgba(255,255,255,0.45)",
+                fontSize: "0.75rem",
+                color: "rgba(255,255,255,0.35)",
                 textDecoration: "none",
                 letterSpacing: "0.08em",
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#C9A96E"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.45)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.35)"; }}
             >
               {l.label}
             </a>
           ))}
         </div>
 
-        {/* Phone */}
         <a
           href="tel:+74951234567"
           style={{
             display: "inline-block",
             fontFamily: '"Playfair Display", Georgia, serif',
-            fontSize: "1.3rem",
+            fontSize: "1.25rem",
             fontWeight: 700,
             color: "#C9A96E",
             textDecoration: "none",
             marginBottom: "28px",
-            letterSpacing: "0.02em",
           }}
         >
           +7 (495) 123-45-67
         </a>
 
-        {/* Copyright */}
-        <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: "24px" }}>
+        <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "22px" }}>
           <p style={{
             fontFamily: "Montserrat, sans-serif",
-            fontSize: "0.72rem",
-            color: "rgba(255,255,255,0.25)",
+            fontSize: "0.7rem",
+            color: "rgba(255,255,255,0.2)",
             lineHeight: 1.7,
             marginBottom: "10px",
           }}>
-            © Все права защищены. Монумент Сервис 2026 г. Памятники на заказ и оптом.
-            <br />
+            © Все права защищены. Монумент Сервис 2026 г. Памятники на заказ и оптом.<br />
             Информация на сайте не является публичной офертой.
           </p>
           <div style={{ display: "flex", gap: "16px", justifyContent: "center" }}>
@@ -90,14 +104,14 @@ export default function Footer() {
                 href="#"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
-                  fontSize: "0.68rem",
-                  color: "rgba(255,255,255,0.2)",
+                  fontSize: "0.66rem",
+                  color: "rgba(255,255,255,0.18)",
                   textDecoration: "underline",
                   textUnderlineOffset: "3px",
                   transition: "color 0.2s",
                 }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.5)"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.2)"; }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.45)"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.18)"; }}
               >
                 {t}
               </a>

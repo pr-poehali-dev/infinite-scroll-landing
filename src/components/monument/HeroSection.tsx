@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const HERO_IMAGE = "https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/files/5203f84a-a1a4-4aa2-be58-0ab40714e6df.jpg";
+const HERO_IMAGE = "https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/files/d780e35f-2c2d-4191-998e-4d93c686c4be.jpg";
 
 export default function HeroSection() {
   const bgRef = useRef<HTMLDivElement>(null);
@@ -92,19 +92,19 @@ export default function HeroSection() {
           className="animate-hero-reveal"
           style={{
             fontFamily: "Montserrat, sans-serif",
-            fontWeight: 700,
-            fontSize: "clamp(2rem, 5.5vw, 3.8rem)",
+            fontWeight: 600,
+            fontSize: "clamp(1.5rem, 3.2vw, 2.6rem)",
             color: "#ffffff",
-            lineHeight: 1.12,
-            letterSpacing: "-0.02em",
+            lineHeight: 1.2,
+            letterSpacing: "0.04em",
             textTransform: "uppercase",
-            marginBottom: "24px",
+            marginBottom: "20px",
             animationDelay: "0.05s",
           }}
         >
           Памятники, которые хранят
           <br />
-          <span style={{ color: "#C9A96E" }}>память на века</span>
+          <span style={{ color: "#C9A96E", fontWeight: 700 }}>память на века</span>
         </h1>
 
         {/* Subtitle */}
