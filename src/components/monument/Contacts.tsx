@@ -155,12 +155,23 @@ export default function Contacts() {
     <section
       id="contacts"
       style={{
-        background: "#1e1e1e",
+        background: "#2e2e2e",
         padding: "0",
         position: "relative",
         overflow: "hidden",
       }}
     >
+      {/* Stone texture background */}
+      <div style={{
+        position: "absolute",
+        inset: 0,
+        backgroundImage: "url('https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/files/f474d44f-3752-4194-a590-da36c54a069e.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        opacity: 0.04,
+        pointerEvents: "none",
+      }} />
+
       {/* Background accent */}
       <div style={{
         position: "absolute",
@@ -169,7 +180,7 @@ export default function Contacts() {
         width: "600px",
         height: "600px",
         borderRadius: "50%",
-        background: "radial-gradient(circle, rgba(201,169,110,0.06) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(201,169,110,0.05) 0%, transparent 70%)",
         pointerEvents: "none",
       }} />
 
