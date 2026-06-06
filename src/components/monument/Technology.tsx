@@ -193,8 +193,18 @@ export default function Technology() {
   const { ref: quoteRef, visible: quoteVisible } = useReveal(0.15);
 
   return (
-    <section id="technology" style={{ background: "#F5F5F0", padding: "0 24px 80px" }}>
-      <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+    <section id="technology" style={{ background: "#F5F5F0", padding: "0 24px 80px", position: "relative", overflow: "hidden" }}>
+      {/* Stone texture */}
+      <div style={{
+        position: "absolute",
+        inset: 0,
+        backgroundImage: "url('https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/files/f474d44f-3752-4194-a590-da36c54a069e.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        opacity: 0.035,
+        pointerEvents: "none",
+      }} />
+      <div style={{ maxWidth: "1100px", margin: "0 auto", position: "relative", zIndex: 1 }}>
 
         {/* Header */}
         <div

@@ -267,14 +267,28 @@ export default function Catalog() {
           textAlign: "center",
           padding: "88px 24px 64px",
           background: "#2C2C2C",
+          position: "relative",
+          overflow: "hidden",
           opacity: headVisible ? 1 : 0,
           transform: headVisible ? "translateY(0)" : "translateY(24px)",
           transition: "opacity 0.6s ease, transform 0.6s ease",
         }}
       >
+        {/* Stone texture */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage: "url('https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/files/278e575a-54d3-4698-ade6-6bbfa3eb350a.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.05,
+          pointerEvents: "none",
+        }} />
         <div
           style={{
             display: "inline-flex",
+            position: "relative",
+            zIndex: 1,
             alignItems: "center",
             gap: "12px",
             marginBottom: "16px",
@@ -303,6 +317,8 @@ export default function Catalog() {
             color: "#ffffff",
             lineHeight: 1.2,
             marginBottom: "14px",
+            position: "relative",
+            zIndex: 1,
           }}
         >
           Каталог памятников
@@ -315,6 +331,8 @@ export default function Catalog() {
             maxWidth: "480px",
             margin: "0 auto",
             lineHeight: 1.7,
+            position: "relative",
+            zIndex: 1,
           }}
         >
           Более 10 видов изделий из натурального камня. Любой проект — от типового до эксклюзивного.

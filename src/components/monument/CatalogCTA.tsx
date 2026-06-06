@@ -26,12 +26,24 @@ export default function CatalogCTA() {
         background: "#2C2C2C",
         padding: "72px 24px",
         textAlign: "center",
+        position: "relative",
+        overflow: "hidden",
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(24px)",
         transition: "opacity 0.6s ease, transform 0.6s cubic-bezier(0.16,1,0.3,1)",
       }}
     >
-      <div style={{ maxWidth: "640px", margin: "0 auto" }}>
+      {/* Marble texture */}
+      <div style={{
+        position: "absolute",
+        inset: 0,
+        backgroundImage: "url('https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/files/bfbce3ca-47d6-49bc-b298-099b33c84f14.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        opacity: 0.04,
+        pointerEvents: "none",
+      }} />
+      <div style={{ maxWidth: "640px", margin: "0 auto", position: "relative", zIndex: 1 }}>
         <p
           style={{
             fontFamily: '"Playfair Display", Georgia, serif',
