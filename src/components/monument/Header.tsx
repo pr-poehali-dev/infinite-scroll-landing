@@ -56,7 +56,7 @@ export default function Header() {
   const [catalogOpen, setCatalogOpen] = useState(false);
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 40);
+    const handler = () => setScrolled(window.scrollY > 80);
     window.addEventListener("scroll", handler, { passive: true });
     return () => window.removeEventListener("scroll", handler);
   }, []);
@@ -74,11 +74,11 @@ export default function Header() {
         left: 0,
         right: 0,
         zIndex: 50,
-        background: scrolled ? "rgba(255,255,255,0.97)" : "rgba(255,255,255,0.85)",
-        backdropFilter: "blur(12px)",
-        borderBottom: scrolled ? "1px solid rgba(0,0,0,0.08)" : "1px solid transparent",
-        transition: "background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease",
-        boxShadow: scrolled ? "0 2px 24px rgba(0,0,0,0.08)" : "none",
+        background: scrolled ? "rgba(255,255,255,0.92)" : "rgba(255,255,255,0.55)",
+        backdropFilter: scrolled ? "blur(16px)" : "blur(8px)",
+        borderBottom: scrolled ? "1px solid rgba(0,0,0,0.07)" : "1px solid rgba(255,255,255,0.12)",
+        transition: "background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease",
+        boxShadow: scrolled ? "0 2px 28px rgba(0,0,0,0.07)" : "none",
       }}
     >
       <div
@@ -86,11 +86,12 @@ export default function Header() {
           maxWidth: "1280px",
           margin: "0 auto",
           padding: "0 24px",
-          height: "100px",
+          height: scrolled ? "68px" : "100px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
           gap: "16px",
+          transition: "height 0.4s cubic-bezier(0.16,1,0.3,1)",
         }}
       >
         {/* Logo */}
@@ -99,9 +100,10 @@ export default function Header() {
             src="https://cdn.poehali.dev/projects/3b636f09-869d-4952-ac1a-30b58578bbac/bucket/b43853ec-1979-4ba6-976f-5ea9bd550f70.png"
             alt="Монумент Сервис"
             style={{
-              height: "72px",
+              height: scrolled ? "48px" : "72px",
               width: "auto",
               display: "block",
+              transition: "height 0.4s cubic-bezier(0.16,1,0.3,1)",
               maxWidth: "380px",
             }}
           />
