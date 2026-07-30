@@ -112,7 +112,6 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav
           style={{
-            display: "flex",
             alignItems: "center",
             gap: "4px",
             flex: 1,
